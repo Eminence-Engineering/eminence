@@ -12,8 +12,8 @@ const Header = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <>
-      <header className="relative bg-white text-black lg:rounded-2xl flex items-center justify-between p-5 z-50 max-w-[1100px] mx-auto">
+    <div>
+      <header className="relative bg-white text-black lg:rounded-2xl flex items-center justify-between gap-5 p-5 md:py-7 z-50 max-w-5xl mx-auto transition-all">
         <div>
           <Link to={"/"}>
             <img src={logo} alt="logo" className="w-28 md:w-44" />
@@ -77,7 +77,7 @@ const Header = () => {
           <div className="text-sm font-semibold">
             <Link
               to={"/"}
-              className="bg-primary text-white px-4 py-[10px] md:py-5 rounded-md border border-transparent transition-all duration-300 hover:bg-transparent hover:border-primary hover:text-primary"
+              className="bg-primary text-white px-4 py-[10px] md:py-[15px] rounded-md border border-transparent transition-all duration-300 hover:bg-transparent hover:border-primary hover:text-primary"
             >
               Get in touch
             </Link>
@@ -112,7 +112,7 @@ const Header = () => {
         </li>
         <li>
           <NavLink
-            to={"/"}
+            to={"/solutions"}
             className={({ isActive }) =>
               isActive ? "nav-link active" : "nav-link"
             }
@@ -131,7 +131,7 @@ const Header = () => {
           </NavLink>
         </li>
       </ul>
-    </>
+    </div>
   );
 };
 

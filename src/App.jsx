@@ -16,7 +16,7 @@ function App() {
     <Routes location={location} key={location.pathname}>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Solution />} />
+      <Route path="/solutions" element={<Solution />} />
       <Route path="/faqs" element={<Faqs />} />
       <Route path="*" element={<Error />} />
     </Routes>
