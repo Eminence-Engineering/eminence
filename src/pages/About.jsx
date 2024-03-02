@@ -11,7 +11,7 @@ const About = () => {
     <>
       <PageChange pageTitle="About Us | Eminence" />
       <Hero bgImg={bgAbout} pageTitle={"About Us"} />
-      <div>About</div>;
+      <div>About</div>
       <Footer />
     </>
   );

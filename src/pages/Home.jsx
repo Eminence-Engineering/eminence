@@ -9,7 +9,7 @@ const Home = () => {
     <>
       <PageChange pageTitle="Eminence - Transforming Ideas into Digital Reality" />
       <Hero />
-      <div>Home</div>;
+      <div>Home</div>
       <Footer />
     </>
   );

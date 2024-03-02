@@ -5,7 +5,7 @@ const Faqs = () => {
   return (
     <>
       <PageChange pageTitle="FAQs | Eminence" />
-      <div>Faqs</div>;
+      <div>Faqs</div>
     </>
   );
 };
