@@ -1,5 +1,12 @@
+// components
+import Header from "./Header";
+
 const Hero = () => {
-  return <div>Hero</div>;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 };
 
 export default Hero;
