@@ -1,0 +1,26 @@
+<svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1.26923" y="1.26923" width="46.4615" height="46.4615" rx="3.23077" fill="#F1F3F7" stroke="#6D758F" stroke-width="1.53846"/>
+<mask id="mask0_43_1166" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="45" height="45">
+<rect x="2.18091" y="2.34961" width="44.6131" height="44.6024" rx="4" fill="#E3EFFF"/>
+</mask>
+<g mask="url(#mask0_43_1166)">
+<line x1="33.3207" y1="0.5" x2="33.3207" y2="50.5481" stroke="#B4B9C9" stroke-width="1.02564"/>
+<line x1="41.6283" y1="0.5" x2="41.6283" y2="50.5481" stroke="#B4B9C9" stroke-width="1.02564"/>
+<line x1="25.0131" y1="0.5" x2="25.0131" y2="50.5481" stroke="#B4B9C9" stroke-width="1.02564"/>
+<line x1="8.39759" y1="0.5" x2="8.39759" y2="50.5481" stroke="#B4B9C9" stroke-width="1.02564"/>
+<line x1="16.7052" y1="0.5" x2="16.7052" y2="50.5481" stroke="#B4B9C9" stroke-width="1.02564"/>
+<line x1="-0.523926" y1="16.7035" x2="49.5242" y2="16.7035" stroke="#B4B9C9" stroke-width="1.02564"/>
+<line x1="-0.523926" y1="8.39587" x2="49.5242" y2="8.39587" stroke="#B4B9C9" stroke-width="1.02564"/>
+<line x1="-0.523926" y1="25.0112" x2="49.5242" y2="25.0112" stroke="#B4B9C9" stroke-width="1.02564"/>
+<line x1="-0.523926" y1="41.6266" x2="49.5242" y2="41.6266" stroke="#B4B9C9" stroke-width="1.02564"/>
+<line x1="-0.523926" y1="33.319" x2="49.5242" y2="33.319" stroke="#B4B9C9" stroke-width="1.02564"/>
+<rect x="1.91211" y="2.03455" width="45.0024" height="44.9916" rx="4" fill="url(#paint0_radial_43_1166)"/>
+</g>
+<path d="M31.5 16.5H17.5C16.7044 16.5 15.9413 16.8161 15.3787 17.3787C14.8161 17.9413 14.5 18.7044 14.5 19.5V29.5C14.5 30.2956 14.8161 31.0587 15.3787 31.6213C15.9413 32.1839 16.7044 32.5 17.5 32.5H31.5C32.2956 32.5 33.0587 32.1839 33.6213 31.6213C34.1839 31.0587 34.5 30.2956 34.5 29.5V19.5C34.5 18.7044 34.1839 17.9413 33.6213 17.3787C33.0587 16.8161 32.2956 16.5 31.5 16.5ZM31.5 18.5L25 22.97C24.848 23.0578 24.6755 23.104 24.5 23.104C24.3245 23.104 24.152 23.0578 24 22.97L17.5 18.5H31.5Z" fill="#0E387A"/>
+<defs>
+<radialGradient id="paint0_radial_43_1166" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(24.4133 24.5304) rotate(90) scale(22.4958 22.5012)">
+<stop stop-color="#F6FAFD" stop-opacity="0.28"/>
+<stop offset="1" stop-color="#F6FAFD"/>
+</radialGradient>
+</defs>
+</svg>

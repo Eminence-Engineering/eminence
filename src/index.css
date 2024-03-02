@@ -43,3 +43,7 @@
   @apply left-[100%];
 }
 
+.footer-link {
+  @apply text-base text-[#B4B9C9] relative before:bg-[#B4B9C9] before:absolute before:h-[2px] before:block before:left-0 before:-bottom-[2px] before:w-0 hover:before:w-full before:transition-all before:duration-300;
+}
+
