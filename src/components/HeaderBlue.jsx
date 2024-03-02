@@ -6,14 +6,14 @@ import { Link, NavLink } from "react-router-dom";
 import { Squash as Hamburger } from "hamburger-react";
 
 // images
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo-white.png";
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
     <div>
-      <header className="relative bg-white text-black lg:rounded-2xl flex items-center justify-between gap-5 p-5 md:py-7 z-50 max-w-5xl mx-auto transition-all">
+      <header className="relative bg-primary text-white lg:rounded-2xl flex items-center justify-between gap-5 p-5 md:py-7 z-50 max-w-5xl mx-auto transition-all">
         <div>
           <Link to={"/"}>
             <img src={logo} alt="logo" className="w-28 md:w-44" />
@@ -25,7 +25,9 @@ const Header = () => {
             <NavLink
               to={"/"}
               className={({ isActive }) =>
-                isActive ? "nav-link active" : "nav-link"
+                isActive
+                  ? "nav-link nav-link--1 active"
+                  : "nav-link nav-link--1"
               }
             >
               Home
@@ -35,7 +37,9 @@ const Header = () => {
             <NavLink
               to={"/about"}
               className={({ isActive }) =>
-                isActive ? "nav-link active" : "nav-link"
+                isActive
+                  ? "nav-link nav-link--1 active"
+                  : "nav-link nav-link--1"
               }
             >
               About
@@ -45,7 +49,9 @@ const Header = () => {
             <NavLink
               to={"/solutions"}
               className={({ isActive }) =>
-                isActive ? "nav-link active" : "nav-link"
+                isActive
+                  ? "nav-link nav-link--1 active"
+                  : "nav-link nav-link--1"
               }
             >
               Our Solutions
@@ -55,7 +61,9 @@ const Header = () => {
             <NavLink
               to={"/"}
               className={({ isActive }) =>
-                isActive ? "nav-link active" : "nav-link"
+                isActive
+                  ? "nav-link nav-link--1 active"
+                  : "nav-link nav-link--1"
               }
             >
               Resources
@@ -65,7 +73,9 @@ const Header = () => {
             <NavLink
               to={"/faqs"}
               className={({ isActive }) =>
-                isActive ? "nav-link active" : "nav-link"
+                isActive
+                  ? "nav-link nav-link--1 active"
+                  : "nav-link nav-link--1"
               }
             >
               FAQ
@@ -77,7 +87,7 @@ const Header = () => {
           <div className="text-sm font-semibold">
             <Link
               to={"/"}
-              className="bg-primary text-white px-4 py-[10px] md:py-[15px] rounded-md border border-transparent transition-all duration-300 hover:bg-transparent hover:border-primary hover:text-primary"
+              className="bg-white text-primary px-4 py-[10px] md:py-[15px] rounded-md border border-transparent transition-all duration-300 hover:bg-transparent hover:border-white hover:text-white"
             >
               Get in touch
             </Link>
@@ -89,12 +99,16 @@ const Header = () => {
         </div>
       </header>
 
-      <ul className={isOpen ? "nav-menu" : "nav-menu active"}>
+      <ul
+        className={
+          isOpen ? "nav-menu nav-menu--1" : "nav-menu nav-menu--1 active"
+        }
+      >
         <li>
           <NavLink
             to={"/"}
             className={({ isActive }) =>
-              isActive ? "nav-link active" : "nav-link"
+              isActive ? "nav-link nav-link--1 active" : "nav-link nav-link--1"
             }
           >
             Home
@@ -104,7 +118,7 @@ const Header = () => {
           <NavLink
             to={"/about"}
             className={({ isActive }) =>
-              isActive ? "nav-link active" : "nav-link"
+              isActive ? "nav-link nav-link--1 active" : "nav-link nav-link--1"
             }
           >
             About
@@ -114,7 +128,7 @@ const Header = () => {
           <NavLink
             to={"/solutions"}
             className={({ isActive }) =>
-              isActive ? "nav-link active" : "nav-link"
+              isActive ? "nav-link nav-link--1 active" : "nav-link nav-link--1"
             }
           >
             Our Solutions
@@ -124,7 +138,7 @@ const Header = () => {
           <NavLink
             to={"/faqs"}
             className={({ isActive }) =>
-              isActive ? "nav-link active" : "nav-link"
+              isActive ? "nav-link nav-link--1 active" : "nav-link nav-link--1"
             }
           >
             FAQ

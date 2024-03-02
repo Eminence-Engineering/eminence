@@ -3,7 +3,7 @@ import PageChange from "../hooks/PageChange";
 
 // images
 import bgFaq from "../assets/images/bg-faq.png";
-import Header from "../components/Header";
+import Header from "../components/HeaderBlue";
 
 const Faqs = () => {
   return (

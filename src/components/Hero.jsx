@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { IoArrowForwardSharp } from "react-icons/io5";
 
 // components
-import Header from "./Header";
+import Header from "./HeaderWhite";
 
 const Hero = ({ bgImg, pageTitle }) => {
   return (
