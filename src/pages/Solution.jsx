@@ -6,9 +6,9 @@ import PageChange from "../hooks/PageChange";
 const Solution = () => {
   return (
     <>
-      <PageChange />
+      <PageChange pageTitle="Our Solutions | Eminence" />
       <Hero />
-      <div>Solution</div>;
+      <div>Solution</div>
       <Footer />
     </>
   );

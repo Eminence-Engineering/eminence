@@ -7,7 +7,7 @@ import PageChange from "../hooks/PageChange";
 const Home = () => {
   return (
     <>
-      <PageChange />
+      <PageChange pageTitle="Eminence - Transforming Ideas into Digital Reality" />
       <Hero />
       <div>Home</div>;
       <Footer />

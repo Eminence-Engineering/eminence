@@ -6,7 +6,7 @@ import PageChange from "../hooks/PageChange";
 const About = () => {
   return (
     <>
-      <PageChange />
+      <PageChange pageTitle="About Us | Eminence" />
       <Hero />
       <div>About</div>;
       <Footer />

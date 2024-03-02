@@ -4,7 +4,7 @@ import PageChange from "../hooks/PageChange";
 const Faqs = () => {
   return (
     <>
-      <PageChange />
+      <PageChange pageTitle="FAQs | Eminence" />
       <div>Faqs</div>;
     </>
   );
