@@ -16,7 +16,7 @@ const Industries = () => {
             <div className='w-4/5 flex flex-col items-center'>
                 <div className="flex flex-col justify-center items-center gap-3 py-3 lg:text-center md:text-center">
                     <h1 className='text-4xl font-medium text-darkgrey'>Industries We Provide Services For</h1>
-                    <span className='text-grey lg:w-3/5 md:w-4/5 sm:w-4/5 text-sm'>Empower your brand with our comprehensive digital offerings. Whether you need web design, SEO, or content creation, we have the expertise to take your digital strategy to the next level.</span>
+                    <span className='text-grey lg:w-3/5 md:w-4/5 sm:w-4/5 text-sm'>Empower   your brand with our comprehensive digital offerings. Whether you need web design, SEO, or content creation, we have the expertise to take your digital strategy to the next level.</span>
                 </div>
                 <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-4">
                     <div className="bg-card p-6 rounded">
