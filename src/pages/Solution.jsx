@@ -1,10 +1,10 @@
 // components
-import Footer from "../components/Footer";
-import Hero from "../components/Hero";
-import PageChange from "../hooks/PageChange";
+import Footer from "../components/Footer"
+import Hero from "../components/Hero"
+import PageChange from "../hooks/PageChange"
 
 // images
-import bgSolutions from "../assets/images/bg-solutions.png";
+import bgSolutions from "../assets/images/bg-solutions.png"
 
 const Solution = () => {
   return (
@@ -14,7 +14,7 @@ const Solution = () => {
       <div>Solution</div>
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Solution;
+export default Solution
