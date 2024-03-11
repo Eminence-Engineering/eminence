@@ -1,9 +1,9 @@
 // react
-import PropTypes from "prop-types";
-import { IoArrowForwardSharp } from "react-icons/io5";
+import PropTypes from "prop-types"
+import { IoArrowForwardSharp } from "react-icons/io5"
 
 // components
-import Header from "./HeaderWhite";
+import Header from "./HeaderWhite"
 
 const Hero = ({ bgImg, pageTitle }) => {
   return (
@@ -19,12 +19,12 @@ const Hero = ({ bgImg, pageTitle }) => {
         </p>
       </div>
     </div>
-  );
-};
+  )
+}
 
 Hero.propTypes = {
   bgImg: PropTypes.string,
-  pageTitle: PropTypes.string,
-};
+  pageTitle: PropTypes.string
+}
 
-export default Hero;
+export default Hero

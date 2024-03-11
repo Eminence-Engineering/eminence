@@ -1,28 +1,28 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import PropTypes from "prop-types";
+import { useEffect } from "react"
+import { useLocation } from "react-router-dom"
+import PropTypes from "prop-types"
 
 function PageChange({ pageTitle }) {
-  const routePath = useLocation();
+  const routePath = useLocation()
   const onTop = () => {
-    window.scrollTo(0, 0);
-  };
+    window.scrollTo(0, 0)
+  }
 
   useEffect(() => {
-    onTop();
-    const prevTitle = document.title;
-    document.title = pageTitle;
+    onTop()
+    const prevTitle = document.title
+    document.title = pageTitle
     return () => {
-      document.title = prevTitle;
-    };
+      document.title = prevTitle
+    }
     // eslint-disable-next-line
-  }, [routePath]);
+  }, [routePath])
 
-  return <></>;
+  return <></>
 }
 
 PageChange.propTypes = {
-  pageTitle: PropTypes.string.isRequired,
-};
+  pageTitle: PropTypes.string.isRequired
+}
 
-export default PageChange;
+export default PageChange

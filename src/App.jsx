@@ -1,18 +1,18 @@
 // react
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom"
 
 // styles
-import "./App.css";
+import "./App.css"
 
 // components
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Solution from "./pages/Solution";
-import Faqs from "./pages/Faqs";
-import Error from "./pages/Error";
+import Home from "./pages/Home"
+import About from "./pages/About"
+import Solution from "./pages/Solution"
+import Faqs from "./pages/Faqs"
+import Error from "./pages/Error"
 
 // framer-motion
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion"
 
 function App() {
   return (
@@ -25,8 +25,7 @@ function App() {
         <Route path="*" element={<Error />} />
       </Routes>
     </AnimatePresence>
-  );
+  )
 }
 
-export default App;
-
+export default App
