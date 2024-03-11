@@ -4,6 +4,10 @@ import Hero from "../components/Hero";
 import PageChange from "../hooks/PageChange";
 import Abt from "../components/Abt";
 import Ser from "../components/Ser";
+import Her from "../components/Her";
+import Img from "../components/Img";
+import Com from "../components/Com";
+import Soc from "../components/Soc";
 
 // images
 import bgAbout from "../assets/images/bg-about.png";
@@ -17,43 +21,47 @@ import quality from "../assets/images/Quality.png";
 import blue from "../assets/images/blueabout.png"
 import first from "../assets/images/firstgirl.png"
 import second from "../assets/images/secondgirl.png"
-import imageone from "../assets/images/group1.png"
-import imagetwo from "../assets/images/group2.png"
+
 
 //icons
 import { SlArrowRight } from "react-icons/sl";
 import { SlArrowLeft } from "react-icons/sl";
-import { FaInstagram } from "react-icons/fa";
-import { BiLogoFacebook } from "react-icons/bi";
-import { FaStar } from "react-icons/fa";
+//hook
+import { useEffect,useState } from "react";
 
 
 const About = () => {
+  const [leftStyle, setLeftStyle] = useState({})
+  const [rightStyle, setRightStyle] = useState({})
 
 
 //carousel function
-const start = ()=> {
-  
+useEffect(()=>{
   var buttons = document.querySelectorAll(".btn");
-  var wrapper = document.querySelector("#wrapper")
+  var wrapper = document.querySelector("#wrapper");
+}, [])
 
+const scroll = ()=>{
+  var max = wrapper.scrollWidth - wrapper.clientWidth;
+  setLeftStyle(wrapper.scrollLeft <= 0 ? {display:"none"}: null)
+  setRightStyle(wrapper.scrollLeft >= max ? {display:"none"}: null)
+}
+
+useEffect(()=>{
+scroll()
+
+},[])
+
+const right = ()=> {
       var direction = 1;
-
       var amount = direction * wrapper.clientWidth;
-
       wrapper.scrollBy({left:amount, behavior:"smooth"});
    
 }
 
-const start2 = ()=> {
-  
-  var buttons = document.querySelectorAll(".btn");
-  var wrapper = document.querySelector("#wrapper")
-
+const left = ()=> {
       var direction = -1;
-
       var amount = direction * wrapper.clientWidth;
-
       wrapper.scrollBy({left:amount, behavior:"smooth"});
 
    
@@ -67,18 +75,9 @@ const start2 = ()=> {
       <div>
         <div className="md:px-9 py-9 px-8">
           <Abt />
-
-          <div className="lg:flex justify-between pt-4 mb-12">
-            <h2 className=" md:w-[664px] md:leading-[60px] md:text-[50px] text-[24px] leading-[30px] font-[700]">GET <span className="text-[#407bff] font-[700]">FIRST HAND</span> EXPERIENCE AND EXPERTISE FROM THE BEST</h2>
-            <p className="md:w-[443px] text-[14px] leading-[22px] text-[#6d758f]">Lorem ipsum dolor sit amet consecte tur quet adipiscing elit semper dalaracc lacus vel ams facilisis volutpat est.
-Lorem ipsum dolor sit amet consecte tur quet adipiscing elit semper dalaracc lacus vel ams facilisis volutpat est.</p>
-          </div>
-
-          <div className="md:flex mb-20 w-[95%] mx-auto justify-center">
-            <img src={imageone} alt="" className=" w-[100%] md:w-[60%] md:max-h-[468px] md:max-w-[697px]"/>
-            <img src={imagetwo} alt="" className=" w-[70%] md:w-[40%] md:max-h-[379px] md:max-w-[565px] relative top-[-20px] left-[50px] md:top-[34px] md:left-[-50px]"/>
-          </div>
-
+          <Her />
+          <Img />
+          
           <div className="four mb-20">
 
             <div className="leading-[17px] md:leading-[21px] md:text-center  md:w-[600px] md:mx-auto pt-5">
@@ -104,13 +103,11 @@ Lorem ipsum dolor sit amet consecte tur quet adipiscing elit semper dalaracc lac
               title = "Maintenance"
               content = "Software maintenance is a more important technique to handle."
               />
-
-            
             </div>
 
           </div>
 
-          <div className="md:flex md:gap-8 md:items-center mt-9 mb-16">
+          <div className="md:flex md:gap-8 md:items-center mt-6 mb-16">
             <div className="md:w-[450px] mb-4">
                 <h3 className="font-[500] text-[29px] md:text-[50px]">
                   Our Core Values
@@ -202,43 +199,8 @@ Lorem ipsum dolor sit amet consecte tur quet adipiscing elit semper dalaracc lac
           </div>
 
           <div className="md:flex md:gap-5 mt-6 md:mt-0">
-
-          <div className="p-4 bg-white max-w-[327px] mb-[20px] md:mb-0 shrink-1 md:self-start">
-                <img src={first} alt="" />
-
-                <div className="flex justify-between mt-4 ">
-                    <div>
-                      <h5 className="text-[#2d2e2e]">Anna Smith</h5>
-                      <h6 className="text-[#ababab]">designer</h6>
-                    </div>
-
-                    <div className="flex gap-4">
-                      <FaInstagram />
-                      <BiLogoFacebook />
-                    </div>
-                </div>
-              
-
-            </div>
-
-              <div className="p-4 bg-white max-w-[327px] mb-[20px] md:mb-0 shrink-1 md:self-start">
-                  <img src={second} alt="" />
-                  <div className="flex justify-between mt-4">
-                      <div>
-                        <h5 className="text-[#2d2e2e]">Anna Smith</h5>
-                        <h6 className="text-[#ababab]">designer</h6>
-                      </div>
-
-                      <div className="flex gap-4">
-                        <FaInstagram />
-                        <BiLogoFacebook />
-                   </div>
-                </div>  
-              
-
-            </div>
-
-
+            <Soc src={first} />
+            <Soc src={second} />
           </div>
 
           </div>
@@ -253,94 +215,23 @@ Lorem ipsum dolor sit amet consecte tur quet adipiscing elit semper dalaracc lac
 
             <div className="flex overflow-hidden mt-6 relative" >
                
-               <div id = "wrapper" className="flex overflow-hidden mt-6">
-               <div className="border-2 border-grey max-w-[358px] p-[10px] rounded-lg flex flex-col gap-4 relative basis-[358px] shrink-0 mb-2">
-                  <div className="flex text-[#d4af37] gap-3 text-[24px]">
-                  <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
-                  </div>
-
-                  <p>
-                  heir communication throughout the project was exceptional, and we couldn't be happier with the outcome.
-                  </p>
-
-                  <h5>
-                    Brian Clark
-                  </h5>
-
-                  <p className="mt-[-10px]">
-                  VP of Marketing at Snapchat
-                  </p>
-
+               <div id = "wrapper" className="flex overflow-hidden mt-6" onScroll={scroll}>
+                  <Com />
+                  <Com />
+                  <Com />
+                  <Com />
+                  <Com />
                 </div>
-
-                <div className="border-2 border-grey max-w-[358px] p-[10px] rounded-lg flex flex-col gap-4 relative basis-[358px] shrink-0 mb-2">
-                  <div className="flex text-[#d4af37] gap-3 text-[24px]">
-                  <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
-                  </div>
-
-                  <p>
-                  heir communication throughout the project was exceptional, and we couldn't be happier with the outcome.
-                  </p>
-
-                  <h5>
-                    Brian Clark
-                  </h5>
-
-                  <p className="mt-[-10px]">
-                  VP of Marketing at Snapchat
-                  </p>
-
-                </div>
-
-                <div className="border-2 border-grey max-w-[358px] p-[10px] rounded-lg flex flex-col gap-4 relative basis-[358px] shrink-0 mb-2">
-                  <div className="flex text-[#d4af37] gap-3 text-[24px]">
-                  <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
-                  </div>
-
-                  <p>
-                  heir communication throughout the project was exceptional, and we couldn't be happier with the outcome.
-                  </p>
-
-                  <h5>
-                    Brian Clark
-                  </h5>
-
-                  <p className="mt-[-10px]">
-                  VP of Marketing at Snapchat
-                  </p>
-
-                </div>
-
-                <div className="border-2 border-grey max-w-[358px] p-[10px] rounded-lg flex flex-col gap-4 relative basis-[358px] shrink-0 mb-2">
-                  <div className="flex text-[#d4af37] gap-3 text-[24px]">
-                  <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
-                  </div>
-
-                  <p>
-                  heir communication throughout the project was exceptional, and we couldn't be happier with the outcome.
-                  </p>
-
-                  <h5>
-                    Brian Clark
-                  </h5>
-
-                  <p className="mt-[-10px]">
-                  VP of Marketing at Snapchat
-                  </p>
-
-                </div>
-              
-               </div>
 
            
 
                 
-                    <button onClick={start2} id="prev" className="absolute top-[40%] left-[25px] w-[48px] h-[48px] rounded-[50%] hover:bg-white text-white bg-primary hover:text-primary hover:border-2 hover:border-primary flex justify-center items-center "  ><SlArrowLeft /></button>
-                    <button onClick={start} id="next" className="absolute top-[40%] right-[25px] w-[48px] h-[48px] rounded-[50%] hover:bg-white text-white bg-primary hover:text-primary hover:border-2 hover:border-primary flex justify-center items-center "  ><SlArrowRight /></button>
+                <button onClick={left} id="prev" className="absolute bottom-[40%] left-[25px] w-[48px] h-[48px] rounded-[50%] hover:bg-white text-white bg-primary hover:text-primary hover:border-2 hover:border-primary flex justify-center items-center "  style={leftStyle}><SlArrowLeft /></button>
+                <button onClick={right} id="next" className="absolute bottom-[40%] right-[25px] w-[48px] h-[48px] rounded-[50%] hover:bg-white text-white bg-primary hover:text-primary hover:border-2 hover:border-primary flex justify-center items-center "  style={rightStyle}><SlArrowRight /></button>
                
               </div>
           </div>
-          
+           
         </div>
 
       </div>
