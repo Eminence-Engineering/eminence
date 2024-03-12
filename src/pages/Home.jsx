@@ -6,7 +6,6 @@ import Hero from "../components/home/Hero"
 import Service from "../components/home/Service"
 import Industries from "../components/home/Industries"
 import Partners from "../components/home/Partners"
-import Executives from "../components/home/Executives"
 
 const Home = () => {
   return (
@@ -16,7 +15,6 @@ const Home = () => {
       <Service />
       <Industries />
       <Partners />
-      <Executives />
       <Footer />
     </>
   )
