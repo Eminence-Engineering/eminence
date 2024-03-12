@@ -2,7 +2,7 @@
 import Footer from "../components/Footer"
 import Hero from "../components/Hero"
 import PageChange from "../hooks/PageChange"
-import Abt from "../components/about/Abt"
+import AboutTitle from "../components/about/AboutTitle"
 import Get from "../components/about/Get"
 import Image from "../components/about/Image"
 import Socials from "../components/about/Socials"
@@ -67,82 +67,77 @@ const About = () => {
     <>
       <PageChange pageTitle="About Us | Eminence" />
       <Hero bgImg={bgAbout} pageTitle={"About Us"} />
-      <div>
-        <div className="md:px-9 py-9 px-8">
-          <Abt />
-          <Get />
-          <Image />
+      <AboutTitle />
+      <Get />
+      <Image />
+      <div className="four mb-20">
+        <div className="leading-[17px] md:leading-[21px] md:text-center  md:w-[600px] md:mx-auto pt-5">
+          <h3 className="text-[29px] md:text-[50px] font-[500] leading-[61px]">Our Services</h3>
+          <p className="mt-3 text-[#6d758f]">
+            As a company, we provide comprehensive services to support your business by leveraging strategy to drive people, process and
+            information.
+          </p>
+        </div>
 
-          <div className="four mb-20">
-            <div className="leading-[17px] md:leading-[21px] md:text-center  md:w-[600px] md:mx-auto pt-5">
-              <h3 className="text-[29px] md:text-[50px] font-[500] leading-[61px]">Our Services</h3>
-              <p className="mt-3 text-[#6d758f]">
-                As a company, we provide comprehensive services to support your business by leveraging strategy to drive people, process and
-                information.
-              </p>
-            </div>
+        <div className="md:flex md:flex-row gap-[10px] md:w-auto md:mx-auto md:max-w-[1100px] flex flex-col mt-2">
+          <ServiceCard src={cube} title="Saas Products" content="We build SaaS for Business and Digitized Companies" />
 
-            <div className="md:flex md:flex-row gap-[10px] md:w-auto md:mx-auto md:max-w-[1100px] flex flex-col mt-2">
-              <ServiceCard src={cube} title="Saas Products" content="We build SaaS for Business and Digitized Companies" />
+          <ServiceCard
+            src={design}
+            title="Consultancy"
+            content="Need help in picking out a right project or you are thriving to move in a direction but don’t know how to start? we can help you."
+          />
 
-              <ServiceCard
-                src={design}
-                title="Consultancy"
-                content="Need help in picking out a right project or you are thriving to move in a direction but don’t know how to start? we can help you."
-              />
+          <ServiceCard src={branding} title="Maintenance" content="Software maintenance is a more important technique to handle." />
+        </div>
 
-              <ServiceCard src={branding} title="Maintenance" content="Software maintenance is a more important technique to handle." />
-            </div>
+        <div className="md:flex md:gap-8 md:items-center mt-6 mb-16">
+          <div className="md:w-[450px] mb-4">
+            <h3 className="font-[500] text-[29px] md:text-[50px]">Our Core Values</h3>
+            <p className="leading-[22px] text-[14px] text-[#6d758f]">
+              Lorem ipsum dolor sit amet consecte tur quet adipiscing elit semper dalaracc lacus vel ams facilisis volutpat est. Lorem ipsum
+              dolor sit amet consecte tur quet adipiscing elit semper dalaracc lacus vel ams facilisis volutpat est.
+            </p>
           </div>
 
-          <div className="md:flex md:gap-8 md:items-center mt-6 mb-16">
-            <div className="md:w-[450px] mb-4">
-              <h3 className="font-[500] text-[29px] md:text-[50px]">Our Core Values</h3>
-              <p className="leading-[22px] text-[14px] text-[#6d758f]">
-                Lorem ipsum dolor sit amet consecte tur quet adipiscing elit semper dalaracc lacus vel ams facilisis volutpat est. Lorem
-                ipsum dolor sit amet consecte tur quet adipiscing elit semper dalaracc lacus vel ams facilisis volutpat est.
-              </p>
+          <div className="bg-[#e7ebf2] p-[32px] rounded-[16px] md:w-[659px] md:grid md:grid-cols-[repeat(2,_minmax(242px,_1fr))] md:gap-2 md:content-between">
+            <div className="flex gap-4 mb-2 items-center md:items-start md:flex-col md:w-[242px]">
+              <img src={union} alt="" className="w-[32px] md:w-[54px] h-[32px] md:h-[54px]" />
+
+              <div>
+                <h5 className="font-[700] text-[#6d758f]">Unison</h5>
+
+                <p className="text-[14px] text-[#6d758f]">We thrive to be in harmony and consider ourselves as one family.</p>
+              </div>
             </div>
 
-            <div className="bg-[#e7ebf2] p-[32px] rounded-[16px] md:w-[659px] md:grid md:grid-cols-[repeat(2,_minmax(242px,_1fr))] md:gap-2 md:content-between">
-              <div className="flex gap-4 mb-2 items-center md:items-start md:flex-col md:w-[242px]">
-                <img src={union} alt="" className="w-[32px] md:w-[54px] h-[32px] md:h-[54px]" />
+            <div className="flex gap-4 mb-2 items-center md:items-start md:flex-col md:w-[242px]">
+              <img src={excellence} alt="" className="w-[32px] md:w-[54px] h-[32px] md:h-[54px]" />
 
-                <div>
-                  <h5 className="font-[700] text-[#6d758f]">Unison</h5>
+              <div>
+                <h5 className="font-[700] text-[#6d758f]">Excellence</h5>
 
-                  <p className="text-[14px] text-[#6d758f]">We thrive to be in harmony and consider ourselves as one family.</p>
-                </div>
+                <p className="text-[14px] text-[#6d758f]">Excellence defines us, our client and our team.</p>
               </div>
+            </div>
 
-              <div className="flex gap-4 mb-2 items-center md:items-start md:flex-col md:w-[242px]">
-                <img src={excellence} alt="" className="w-[32px] md:w-[54px] h-[32px] md:h-[54px]" />
+            <div className="flex gap-4 mb-2 items-center md:items-start md:flex-col md:w-[242px]">
+              <img src={quality} alt="" className="w-[32px] md:w-[54px] h-[32px] md:h-[54px]" />
 
-                <div>
-                  <h5 className="font-[700] text-[#6d758f]">Excellence</h5>
+              <div>
+                <h5 className="font-[700] text-[#6d758f]">Quality</h5>
 
-                  <p className="text-[14px] text-[#6d758f]">Excellence defines us, our client and our team.</p>
-                </div>
+                <p className="text-[14px] text-[#6d758f]">We move with the speed of light and tend to deliver at the right time.</p>
               </div>
+            </div>
 
-              <div className="flex gap-4 mb-2 items-center md:items-start md:flex-col md:w-[242px]">
-                <img src={quality} alt="" className="w-[32px] md:w-[54px] h-[32px] md:h-[54px]" />
+            <div className="flex gap-4 mb-2 items-center md:items-start md:flex-col md:w-[242px]">
+              <img src={speed} alt="" className="w-[32px] md:w-[54px] h-[32px] md:h-[54px]" />
 
-                <div>
-                  <h5 className="font-[700] text-[#6d758f]">Quality</h5>
+              <div>
+                <h5 className="font-[700] text-[#6d758f]">Speed</h5>
 
-                  <p className="text-[14px] text-[#6d758f]">We move with the speed of light and tend to deliver at the right time.</p>
-                </div>
-              </div>
-
-              <div className="flex gap-4 mb-2 items-center md:items-start md:flex-col md:w-[242px]">
-                <img src={speed} alt="" className="w-[32px] md:w-[54px] h-[32px] md:h-[54px]" />
-
-                <div>
-                  <h5 className="font-[700] text-[#6d758f]">Speed</h5>
-
-                  <p className="text-[14px] text-[#6d758f]">We move with the speed of light and tend to deliver at the right time.</p>
-                </div>
+                <p className="text-[14px] text-[#6d758f]">We move with the speed of light and tend to deliver at the right time.</p>
               </div>
             </div>
           </div>
