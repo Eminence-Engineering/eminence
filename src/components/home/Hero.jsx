@@ -2,7 +2,7 @@
 import Header from "../HeaderWhite"
 
 // images
-import hero from "../../assets/images/Home/hero.png"
+import hero from "../../assets/images/home/hero.png"
 
 const Hero = () => {
   return (

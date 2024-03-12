@@ -1,12 +1,12 @@
 // IMAGES
 
-import group from "../../assets/images/Home/Group.png"
-import exec1 from "../../assets/images/Home/exec (1).png"
-import exec2 from "../../assets/images/Home/exec (2).png"
-import instagram from "../../assets/svgs/Home/instagram.svg"
-import facebook from "../../assets/svgs/Home/facebook.svg"
-import right from "../../assets/svgs/Home/right.svg"
-import left from "../../assets/svgs/Home/left.svg"
+import group from "../../assets/images/home/Group.png"
+import exec1 from "../../assets/images/home/exec (1).png"
+import exec2 from "../../assets/images/home/exec (2).png"
+import instagram from "../../assets/svgs/home/instagram.svg"
+import facebook from "../../assets/svgs/home/facebook.svg"
+import right from "../../assets/svgs/home/right.svg"
+import left from "../../assets/svgs/home/left.svg"
 
 const Executives = () => {
   return (

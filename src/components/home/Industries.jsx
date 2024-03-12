@@ -1,11 +1,11 @@
 // IMAGES
 
-import ux1 from "../../assets/svgs/Home/ux 1.svg"
-import app from "../../assets/svgs/Home/app-development 1.svg"
-import ui1 from "../../assets/svgs/Home/ui-design 1.svg"
-import cubes from "../../assets/svgs/Home/cubes 1.svg"
-import design from "../../assets/svgs/Home/design 1.svg"
-import branding from "../../assets/svgs/Home/branding 1.svg"
+import ux1 from "../../assets/svgs/home/ux 1.svg"
+import app from "../../assets/svgs/home/app-development 1.svg"
+import ui1 from "../../assets/svgs/home/ui-design 1.svg"
+import cubes from "../../assets/svgs/home/cubes 1.svg"
+import design from "../../assets/svgs/home/design 1.svg"
+import branding from "../../assets/svgs/home/branding 1.svg"
 
 const Industries = () => {
   return (

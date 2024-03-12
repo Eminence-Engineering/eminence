@@ -1,14 +1,14 @@
 // IMAGES
 
-import Logo1 from "../../assets/svgs/Home/Logo (1).svg"
-import Logo2 from "../../assets/svgs/Home/Logo (2).svg"
-import Logo3 from "../../assets/svgs/Home/Logo (3).svg"
-import Logo4 from "../../assets/svgs/Home/Logo (4).svg"
-import Logo5 from "../../assets/svgs/Home/Logo (5).svg"
-import Logo6 from "../../assets/svgs/Home/Logo (6).svg"
-import Logo7 from "../../assets/svgs/Home/Logo (7).svg"
-import Logo8 from "../../assets/svgs/Home/Logo (8).svg"
-import Logo9 from "../../assets/svgs/Home/Logo (9).svg"
+import Logo1 from "../../assets/svgs/home/Logo (1).svg"
+import Logo2 from "../../assets/svgs/home/Logo (2).svg"
+import Logo3 from "../../assets/svgs/home/Logo (3).svg"
+import Logo4 from "../../assets/svgs/home/Logo (4).svg"
+import Logo5 from "../../assets/svgs/home/Logo (5).svg"
+import Logo6 from "../../assets/svgs/home/Logo (6).svg"
+import Logo7 from "../../assets/svgs/home/Logo (7).svg"
+import Logo8 from "../../assets/svgs/home/Logo (8).svg"
+import Logo9 from "../../assets/svgs/home/Logo (9).svg"
 
 const Partners = () => {
   return (
