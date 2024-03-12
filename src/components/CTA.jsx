@@ -9,9 +9,9 @@ const HeroSection = () => {
     <section className='w-full bg-white py-24 p-4'>
         <div className='md:max-w-[1200px] m-auto grid md:grid-cols-2 max-w-[400px]'>
             <div className='flex flex-col justify-start gap-4'>
-            <div class="relative flex py-5 items-center">
-                <div class="flex-grow max-w-24 border-2 border-blue-800"></div>
-                <span class="flex-shrink mx-4 text-xl text-black">Who we Are</span>
+            <div className="relative flex py-5 items-center">
+                <div className="flex-grow max-w-24 border-2 border-blue-800"></div>
+                <span className="flex-shrink mx-4 text-xl text-black">Who we Are</span>
                 </div>
                 <h1 className='py-2 text-5xl font-semibold text-black'>
                 We're Professional IT Solutions Agency

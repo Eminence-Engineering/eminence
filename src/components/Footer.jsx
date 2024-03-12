@@ -129,21 +129,21 @@ const Footer = () => {
           <h4 className="font-semibold mb-6 sm:whitespace-nowrap">Contact us</h4>
           <div className="flex items-center gap-4 mb-6">
             <img src={email} alt="email-logo" />
-            <p className="text-sm">
+            <div className="text-sm">
               <p className="text-[#B4B9C9]">Email:</p>
               <a href="mailto:contact@brix.com" className="footer-link !text-white before:!bg-white font-semibold">
                 contact@brix.com
               </a>
-            </p>
+            </div>
           </div>
           <div className="flex items-center gap-4">
             <img src={phone} alt="phone-logo" />
-            <p className="text-sm">
+            <div className="text-sm">
               <p className="text-[#B4B9C9]">Phone:</p>
               <a href="tel:4146875892" className="footer-link !text-white before:!bg-white font-semibold">
                 (414) 687-5892
               </a>
-            </p>
+            </div>
           </div>
         </div>
       </div>

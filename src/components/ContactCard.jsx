@@ -6,7 +6,7 @@ const ContactCard = () => {
           <div className='p-4 ' >
             <h1 className='py-2 text-xl font-semibold text-black'> Contact Us </h1>
             <p className='py-2 text-3xl font-semibold text-black'>Get In Touch With Us</p>
-            <div class="flex-grow max-w-24 border-2 border-blue-800"></div>
+            <div className="flex-grow max-w-24 border-2 border-blue-800"></div>
           </div>
           <div><img src={force} alt="hero"/></div>
           
