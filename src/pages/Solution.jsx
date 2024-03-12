@@ -9,7 +9,7 @@ import ContactCard from "../components/ContactCard";
 import PageChange from "../hooks/PageChange";
 
 // images
-import bgSolutions from "../assets/images/bg-solutions.png";
+import bgSolutions from "../assets/images/bg-solutions.png"
 
 const Solution = () => {
   return (
@@ -24,7 +24,7 @@ const Solution = () => {
       <ContactCard />
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Solution;
+export default Solution

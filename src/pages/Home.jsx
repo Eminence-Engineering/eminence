@@ -1,18 +1,23 @@
 // components
 
-import Footer from "../components/Footer";
-import Header from "../components/HeaderWhite";
-import PageChange from "../hooks/PageChange";
+import Footer from "../components/Footer"
+import PageChange from "../hooks/PageChange"
+import Hero from "../components/home/Hero"
+import Services from "../components/home/Services"
+import Industries from "../components/home/Industries"
+import Partners from "../components/home/Partners"
 
 const Home = () => {
   return (
     <>
       <PageChange pageTitle="Eminence - Transforming Ideas into Digital Reality" />
-      <Header />
-      <div>Home</div>
+      <Hero />
+      <Services />
+      <Industries />
+      <Partners />
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

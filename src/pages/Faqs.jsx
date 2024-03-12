@@ -1,9 +1,9 @@
 // components
-import PageChange from "../hooks/PageChange";
+import PageChange from "../hooks/PageChange"
 
 // images
-import bgFaq from "../assets/images/bg-faq.png";
-import Header from "../components/HeaderBlue";
+import bgFaq from "../assets/images/bg-faq.png"
+import Header from "../components/HeaderBlue"
 
 const Faqs = () => {
   return (
@@ -12,12 +12,10 @@ const Faqs = () => {
       <Header />
       <main className="container p-5 flex-1 flex flex-col items-center justify-center gap-16 md:gap-24">
         <img src={bgFaq} alt="" />
-        <h2 className="font-semibold text-3xl md:text-6xl">
-          We Are Coming Soon
-        </h2>
+        <h2 className="font-semibold text-3xl md:text-6xl">We Are Coming Soon</h2>
       </main>
     </div>
-  );
-};
+  )
+}
 
-export default Faqs;
+export default Faqs

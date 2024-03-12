@@ -1,19 +1,19 @@
 // react
-import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { useState } from "react"
+import { Link, NavLink } from "react-router-dom"
 
 // hamburger
-import { Squash as Hamburger } from "hamburger-react";
+import { Squash as Hamburger } from "hamburger-react"
 
 // images
-import logo from "../assets/images/logo-white.png";
+import logo from "../assets/images/logo-white.png"
 
 const Header = () => {
-  const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState(false)
 
   return (
     <div>
-      <header className="relative bg-primary text-white lg:rounded-2xl flex items-center justify-between gap-2 p-5 md:py-7 z-50 max-w-5xl mx-auto transition-all">
+      <header className="relative bg-primary text-white lg:rounded-2xl flex items-center justify-between gap-2 p-5 md:py-7 z-50 lg:container transition-all">
         <div>
           <Link to={"/"}>
             <img src={logo} alt="logo" className="w-20 sm:w-28 md:w-44" />
@@ -22,62 +22,27 @@ const Header = () => {
 
         <ul className="list-none hidden lg:flex items-center gap-8">
           <li>
-            <NavLink
-              to={"/"}
-              className={({ isActive }) =>
-                isActive
-                  ? "nav-link nav-link--1 active"
-                  : "nav-link nav-link--1"
-              }
-            >
+            <NavLink to={"/"} className={({ isActive }) => (isActive ? "nav-link nav-link--1 active" : "nav-link nav-link--1")}>
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to={"/about"}
-              className={({ isActive }) =>
-                isActive
-                  ? "nav-link nav-link--1 active"
-                  : "nav-link nav-link--1"
-              }
-            >
+            <NavLink to={"/about"} className={({ isActive }) => (isActive ? "nav-link nav-link--1 active" : "nav-link nav-link--1")}>
               About
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to={"/solutions"}
-              className={({ isActive }) =>
-                isActive
-                  ? "nav-link nav-link--1 active"
-                  : "nav-link nav-link--1"
-              }
-            >
+            <NavLink to={"/solutions"} className={({ isActive }) => (isActive ? "nav-link nav-link--1 active" : "nav-link nav-link--1")}>
               Our Solutions
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to={"/"}
-              className={({ isActive }) =>
-                isActive
-                  ? "nav-link nav-link--1 active"
-                  : "nav-link nav-link--1"
-              }
-            >
+            <NavLink to={"/"} className={({ isActive }) => (isActive ? "nav-link nav-link--1 active" : "nav-link nav-link--1")}>
               Resources
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to={"/faqs"}
-              className={({ isActive }) =>
-                isActive
-                  ? "nav-link nav-link--1 active"
-                  : "nav-link nav-link--1"
-              }
-            >
+            <NavLink to={"/faqs"} className={({ isActive }) => (isActive ? "nav-link nav-link--1 active" : "nav-link nav-link--1")}>
               FAQ
             </NavLink>
           </li>
@@ -99,54 +64,30 @@ const Header = () => {
         </div>
       </header>
 
-      <ul
-        className={
-          isOpen ? "nav-menu nav-menu--1" : "nav-menu nav-menu--1 active"
-        }
-      >
+      <ul className={isOpen ? "nav-menu nav-menu--1" : "nav-menu nav-menu--1 active"}>
         <li>
-          <NavLink
-            to={"/"}
-            className={({ isActive }) =>
-              isActive ? "nav-link nav-link--1 active" : "nav-link nav-link--1"
-            }
-          >
+          <NavLink to={"/"} className={({ isActive }) => (isActive ? "nav-link nav-link--1 active" : "nav-link nav-link--1")}>
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink
-            to={"/about"}
-            className={({ isActive }) =>
-              isActive ? "nav-link nav-link--1 active" : "nav-link nav-link--1"
-            }
-          >
+          <NavLink to={"/about"} className={({ isActive }) => (isActive ? "nav-link nav-link--1 active" : "nav-link nav-link--1")}>
             About
           </NavLink>
         </li>
         <li>
-          <NavLink
-            to={"/solutions"}
-            className={({ isActive }) =>
-              isActive ? "nav-link nav-link--1 active" : "nav-link nav-link--1"
-            }
-          >
+          <NavLink to={"/solutions"} className={({ isActive }) => (isActive ? "nav-link nav-link--1 active" : "nav-link nav-link--1")}>
             Our Solutions
           </NavLink>
         </li>
         <li>
-          <NavLink
-            to={"/faqs"}
-            className={({ isActive }) =>
-              isActive ? "nav-link nav-link--1 active" : "nav-link nav-link--1"
-            }
-          >
+          <NavLink to={"/faqs"} className={({ isActive }) => (isActive ? "nav-link nav-link--1 active" : "nav-link nav-link--1")}>
             FAQ
           </NavLink>
         </li>
       </ul>
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
