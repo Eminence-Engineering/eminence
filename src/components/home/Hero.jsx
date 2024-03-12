@@ -1,31 +1,36 @@
-//
-
+// components
 import Header from "../HeaderWhite"
 
-// image
+// images
 import hero from "../../assets/images/Home/hero.png"
 
 const Hero = () => {
   return (
     <>
-      <div className="min-h-screen bg-primary grid justify-center align-center">
+      <div className="min-h-screen bg-[#001F61] lg:pt-6 flex flex-col">
         <Header />
-        <div className="flex items-center justify-center w-full">
-          <div className="relative lg:flex md:flex sm:grid justify-between pt-16 w-4/5 h-full">
-            <div className="grid lg:w-2/5 md:w-2/5 sm:w-full h-5/6 gap-5">
-              <h1 className="text-white text-5xl font-semibold">Transforming Ideas into Digital Reality</h1>
-              <p className="text-white font-medium">
-                Your success story starts here. Harness the expertise of <span className="font-semibold">Eminence</span> to revolutionize
-                your digital strategy and achieve unparalleled growth.
-              </p>
-              <div className="flex justify-between h-12">
-                <input className="w-3/5 rounded-full pl-4 font-semibold" type="text" name="" id="" placeholder="Enter Your Email" />
-                <button className="w-1/4 font-medium text-white border-white border rounded-full">Lets Talk</button>
-              </div>
-            </div>
-            <div className="lg:w-1/2 md:w-1/2 sm:w-full lg:h-full md:h-4/5 md:absolute md:bottom-0 md:right-0 flex align-end">
-              <img src={hero} className="w-full h-full" alt="" />
-            </div>
+
+        <div className="container p-5 pt-16 pb-0 flex-1 flex flex-col lg:flex-row lg:items-end justify-between gap-20">
+          <div className="lg:max-w-md xl:max-w-[497px] 2xl:max-w-2xl lg:pb-32">
+            <h1 className="text-white text-4xl md:text-[56px] md:leading-tight font-semibold mb-6">
+              Transforming Ideas into Digital Reality
+            </h1>
+            <p className="text-white font-medium mb-10">
+              Your success story starts here. Harness the expertise of <span className="font-bold">Eminence</span> to revolutionize your
+              digital strategy and achieve unparalleled growth.
+            </p>
+            <form className="h-12 sm:h-16 flex gap-3">
+              <input className="rounded-[40px] font-medium h-full px-5 w-full" type="email" name="email" placeholder="Enter Your Email" />
+              <button
+                type="submit"
+                className="font-medium text-white text-base sm:text-lg border-white border rounded-[70px] whitespace-nowrap px-5 sm:px-9"
+              >
+                Let's Talk
+              </button>
+            </form>
+          </div>
+          <div className="">
+            <img src={hero} className="w-full" alt="hero-image" />
           </div>
         </div>
       </div>
