@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <div>
-      <header className="relative bg-white text-black lg:rounded-2xl flex items-center justify-between gap-2 p-5 md:py-7 z-50 max-w-5xl mx-auto transition-all">
+      <header className="relative bg-white text-black lg:rounded-2xl flex items-center justify-between gap-2 p-5 md:py-7 z-50 lg:container transition-all">
         <div>
           <Link to={"/"}>
             <img src={logo} alt="logo" className="w-20 sm:w-28 md:w-44" />
