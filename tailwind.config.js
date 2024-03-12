@@ -7,13 +7,13 @@ export default {
         primary: "#0E387A",
         card: "#E7EBF2",
         grey: "#6D758F",
-        darkgrey: "#353635"
+        darkgrey: "#353635",
+        home: "#001F61"
       },
       container: {
-        center: true,
-      },
-    },
+        center: true
+      }
+    }
   },
-  plugins: [],
-};
-
+  plugins: []
+}

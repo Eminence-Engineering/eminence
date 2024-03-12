@@ -7,7 +7,7 @@ import hero from "../../assets/images/home/hero.png"
 const Hero = () => {
   return (
     <>
-      <div className="min-h-screen bg-[#001F61] lg:pt-6 flex flex-col">
+      <div className="min-h-screen bg-home lg:pt-6 flex flex-col">
         <Header />
 
         <div className="container p-5 pt-16 pb-0 flex-1 flex flex-col lg:flex-row lg:items-end justify-between gap-20">

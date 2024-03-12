@@ -1,61 +1,24 @@
-import service from "../../assets/svgs/Home/service.svg"
-import service1 from "../../assets/svgs/Home/service(1).svg"
-import service2 from "../../assets/svgs/Home/service(2).svg"
-import service3 from "../../assets/svgs/Home/service(3).svg"
+// components
+import ServiceBox from "./ServiceBox"
+import ServiceList from "./ServiceList"
 
 const About = () => {
   return (
-    <>
-      <div className="py-16 flex justify-center items-center">
-        <div className="lg:flex md:grid sm:grid items-start justify-around w-4/5">
-          <div className="lg:w-4/12 md:full sm:full flex flex-col gap-6">
-            <h1 className="text-4xl font-medium w-4/5">What The Company Is Made Of</h1>
-            <span>
-              Lorem ipsum dolor sit amet consectetur. Nibh adipiscing ac donec nisl neque convallis. Quam leo enim ac semper velit fringilla
-              accumsan magnis est.
-            </span>
-          </div>
-          <div className="lg:w-5/12 md:full sm:full lg:flex md:grid md:grid-cols-2 sm:grid sm:grid-cols-1 lg:flex-col items-start mt-5">
-            <div className="flex h-fit items-start gap-4 py-5">
-              <div className="bg-primary p-4 rounded-lg">
-                <img src={service} width={"35px"} alt="" />
-              </div>
-              <div className="grid">
-                <h4 className="font-medium text-xl">Software Development</h4>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-              </div>
-            </div>
-            <div className="flex h-fit items-start gap-4 py-5">
-              <div className="bg-primary p-4 rounded-lg">
-                <img src={service1} width={"35px"} alt="" />
-              </div>
-              <div className="grid">
-                <h4 className="font-medium text-xl">Design And Innovation Hub</h4>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-              </div>
-            </div>
-            <div className="flex h-fit items-start gap-4 py-5">
-              <div className="bg-primary p-4 rounded-lg">
-                <img src={service2} width={"35px"} alt="" />
-              </div>
-              <div className="grid">
-                <h4 className="font-medium text-xl">Manufacturing</h4>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-              </div>
-            </div>
-            <div className="flex h-fit items-start gap-4 py-5">
-              <div className="bg-primary p-4 rounded-lg">
-                <img src={service3} width={"35px"} alt="" />
-              </div>
-              <div className="grid">
-                <h4 className="font-medium text-xl">Research Analysis</h4>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section className="container p-5 py-16 flex flex-col lg:flex-row justify-between gap-10 lg:gap-20">
+      <div className="lg:max-w-md 2xl:max-w-2xl">
+        <h1 className="text-3xl md:text-[50px] md:leading-tight font-medium mb-4">What The Company Is Made Of</h1>
+        <p className="font-medium text-base md:text-lg text-black/60">
+          Lorem ipsum dolor sit amet consectetur. Nibh adipiscing ac donec nisl neque convallis. Quam leo enim ac semper velit fringilla
+          accumsan magnis est.
+        </p>
       </div>
-    </>
+
+      <div className="flex flex-col gap-8">
+        {ServiceList.map((service, index) => (
+          <ServiceBox key={index} title={service.title} description={service.description} img={service.img} />
+        ))}
+      </div>
+    </section>
   )
 }
 
