@@ -10,10 +10,6 @@ import Comment from "../components/about/Comment"
 
 // images
 import bgAbout from "../assets/images/bg-about.png"
-import union from "../assets/images/about/Union.png"
-import excellence from "../assets/images/about/excellence.png"
-import speed from "../assets/images/about/Speed.png"
-import quality from "../assets/images/about/Quality.png"
 import blue from "../assets/images/about/blueabout.png"
 import first from "../assets/images/about/firstgirl.png"
 import second from "../assets/images/about/secondgirl.png"
@@ -24,6 +20,7 @@ import { SlArrowLeft } from "react-icons/sl"
 //hook
 import { useEffect, useState } from "react"
 import Services from "../components/about/Services"
+import CoreValues from "../components/about/CoreValues"
 
 const About = () => {
   const [leftStyle, setLeftStyle] = useState({})
@@ -68,59 +65,8 @@ const About = () => {
       <AboutDescription />
       <AboutImage />
       <Services />
+      <CoreValues />
       <div className="mb-20">
-        <div className="md:flex md:gap-8 md:items-center mt-6 mb-16">
-          <div className="md:w-[450px] mb-4">
-            <h3 className="font-[500] text-[29px] md:text-[50px]">Our Core Values</h3>
-            <p className="leading-[22px] text-[14px] text-[#6d758f]">
-              Lorem ipsum dolor sit amet consecte tur quet adipiscing elit semper dalaracc lacus vel ams facilisis volutpat est. Lorem ipsum
-              dolor sit amet consecte tur quet adipiscing elit semper dalaracc lacus vel ams facilisis volutpat est.
-            </p>
-          </div>
-
-          <div className="bg-[#e7ebf2] p-[32px] rounded-[16px] md:w-[659px] md:grid md:grid-cols-[repeat(2,_minmax(242px,_1fr))] md:gap-2 md:content-between">
-            <div className="flex gap-4 mb-2 items-center md:items-start md:flex-col md:w-[242px]">
-              <img src={union} alt="" className="w-[32px] md:w-[54px] h-[32px] md:h-[54px]" />
-
-              <div>
-                <h5 className="font-[700] text-[#6d758f]">Unison</h5>
-
-                <p className="text-[14px] text-[#6d758f]">We thrive to be in harmony and consider ourselves as one family.</p>
-              </div>
-            </div>
-
-            <div className="flex gap-4 mb-2 items-center md:items-start md:flex-col md:w-[242px]">
-              <img src={excellence} alt="" className="w-[32px] md:w-[54px] h-[32px] md:h-[54px]" />
-
-              <div>
-                <h5 className="font-[700] text-[#6d758f]">Excellence</h5>
-
-                <p className="text-[14px] text-[#6d758f]">Excellence defines us, our client and our team.</p>
-              </div>
-            </div>
-
-            <div className="flex gap-4 mb-2 items-center md:items-start md:flex-col md:w-[242px]">
-              <img src={quality} alt="" className="w-[32px] md:w-[54px] h-[32px] md:h-[54px]" />
-
-              <div>
-                <h5 className="font-[700] text-[#6d758f]">Quality</h5>
-
-                <p className="text-[14px] text-[#6d758f]">We move with the speed of light and tend to deliver at the right time.</p>
-              </div>
-            </div>
-
-            <div className="flex gap-4 mb-2 items-center md:items-start md:flex-col md:w-[242px]">
-              <img src={speed} alt="" className="w-[32px] md:w-[54px] h-[32px] md:h-[54px]" />
-
-              <div>
-                <h5 className="font-[700] text-[#6d758f]">Speed</h5>
-
-                <p className="text-[14px] text-[#6d758f]">We move with the speed of light and tend to deliver at the right time.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div
           className="py-9 px-8 md:px-8"
           style={{ backgroundImage: `url(${blue})`, backgroundRepeat: "no-repeat", backgroundSize: "130% 110%" }}
