@@ -1,3 +1,23 @@
-.partner-image {
+.partner-image,
+.testimonial-card {
   box-shadow: 0px 1px 4px 0px #19213d14;
+}
+
+.about-title {
+  box-shadow: 4px 4px 24px 0px #00000029;
+}
+
+.executives {
+  box-shadow: 0px 1px 4px 0px #19213d14;
+  background-image: url(./assets/svgs/bg-exec-mobile.svg);
+  background-color: #001f61;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+@media screen and (min-width: 768px) {
+  .executives {
+    background-image: url(./assets/svgs/bg-exec-desktop.svg);
+    background-size: auto 100%;
+  }
 }
