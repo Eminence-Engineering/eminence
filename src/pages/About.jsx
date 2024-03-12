@@ -3,7 +3,7 @@ import Footer from "../components/Footer"
 import Hero from "../components/Hero"
 import PageChange from "../hooks/PageChange"
 import AboutTitle from "../components/about/AboutTitle"
-import Get from "../components/about/Get"
+import AboutDescription from "../components/about/AboutDescription"
 import Image from "../components/about/Image"
 import Socials from "../components/about/Socials"
 import ServiceCard from "../components/about/ServiceCard"
@@ -68,7 +68,7 @@ const About = () => {
       <PageChange pageTitle="About Us | Eminence" />
       <Hero bgImg={bgAbout} pageTitle={"About Us"} />
       <AboutTitle />
-      <Get />
+      <AboutDescription />
       <Image />
       <div className="four mb-20">
         <div className="leading-[17px] md:leading-[21px] md:text-center  md:w-[600px] md:mx-auto pt-5">
