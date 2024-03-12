@@ -2,25 +2,26 @@
 import Footer from "../components/Footer"
 import Hero from "../components/Hero"
 import PageChange from "../hooks/PageChange"
-import Abt from "../components/Abt"
-import Ser from "../components/Ser"
-import Her from "../components/Her"
-import Img from "../components/Img"
-import Com from "../components/Com"
-import Soc from "../components/Soc"
+import Abt from "../components/About/Abt"
+import Get from "../components/About/Get"
+import Image from "../components/About/Image"
+import Socials from "../components/About/Socials"
+import ServiceCard from "../components/About/ServiceCard"
+import Comment from "../components/About/Comment"
+
 
 // images
 import bgAbout from "../assets/images/bg-about.png"
-import cube from "../assets/images/cube.png"
-import design from "../assets/images/design.png"
-import branding from "../assets/images/branding.png"
-import union from "../assets/images/Union.png"
-import excellence from "../assets/images/excellence.png"
-import speed from "../assets/images/Speed.png"
-import quality from "../assets/images/Quality.png"
-import blue from "../assets/images/blueabout.png"
-import first from "../assets/images/firstgirl.png"
-import second from "../assets/images/secondgirl.png"
+import cube from "../components/About/assets/images/cube.png"
+import design from "../components/About/assets/images/design.png"
+import branding from "../components/About/assets/images/branding.png"
+import union from "../components/About/assets/images/Union.png"
+import excellence from "../components/About/assets/images/excellence.png"
+import speed from "../components/About/assets/images/Speed.png"
+import quality from "../components/About/assets/images/Quality.png"
+import blue from "../components/About/assets/images/blueabout.png"
+import first from "../components/About/assets/images/firstgirl.png"
+import second from "../components/About/assets/images/secondgirl.png"
 
 //icons
 import { SlArrowRight } from "react-icons/sl"
@@ -70,8 +71,8 @@ const About = () => {
       <div>
         <div className="md:px-9 py-9 px-8">
           <Abt />
-          <Her />
-          <Img />
+          <Get />
+          <Image />
 
           <div className="four mb-20">
             <div className="leading-[17px] md:leading-[21px] md:text-center  md:w-[600px] md:mx-auto pt-5">
@@ -83,15 +84,15 @@ const About = () => {
             </div>
 
             <div className="md:flex md:flex-row gap-[10px] md:w-auto md:mx-auto md:max-w-[1100px] flex flex-col mt-2">
-              <Ser src={cube} title="Saas Products" content="We build SaaS for Business and Digitized Companies" />
+              <ServiceCard src={cube} title="Saas Products" content="We build SaaS for Business and Digitized Companies" />
 
-              <Ser
+              <ServiceCard
                 src={design}
                 title="Consultancy"
                 content="Need help in picking out a right project or you are thriving to move in a direction but don’t know how to start? we can help you."
               />
 
-              <Ser src={branding} title="Maintenance" content="Software maintenance is a more important technique to handle." />
+              <ServiceCard src={branding} title="Maintenance" content="Software maintenance is a more important technique to handle." />
             </div>
           </div>
 
@@ -173,8 +174,8 @@ const About = () => {
             </div>
 
             <div className="md:flex md:gap-5 mt-6 md:mt-0">
-              <Soc src={first} />
-              <Soc src={second} />
+              <Socials src={first} />
+              <Socials src={second} />
             </div>
           </div>
         </div>
@@ -191,11 +192,11 @@ const About = () => {
 
             <div className="flex overflow-hidden mt-6 relative">
               <div id="wrapper" className="flex overflow-hidden mt-6" onScroll={scroll}>
-                <Com />
-                <Com />
-                <Com />
-                <Com />
-                <Com />
+                <Comment />
+                <Comment />
+                <Comment />
+                <Comment />
+                <Comment />
               </div>
 
               <button

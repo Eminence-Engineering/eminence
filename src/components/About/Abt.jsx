@@ -1,4 +1,4 @@
-function About() {
+function Abt() {
   return (
     <>
       <div className="flex gap-2 justify-center items-center w-[204px] h-[49px] rounded-[50px] shadow-[0_0_10px_grey] p-4 mb-4">
@@ -10,4 +10,4 @@ function About() {
   )
 }
 
-export default About
+export default Abt
