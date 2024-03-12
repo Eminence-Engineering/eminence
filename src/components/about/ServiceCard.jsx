@@ -1,20 +1,20 @@
+// react
 import PropTypes from "prop-types"
 
-function ServiceCard(props) {
+const ServiceCard = ({ title, description, img }) => {
   return (
-    <>
-      <div className="sm:w-[95%] max-w-[354px] md:w-[354px] min-h-[242px] bg-[#e7ebf2] flex flex-col gap-[10px] px-[24px] py-[40px] rounded-[8px]">
-        <img src={props.src} alt="" className="w-[54px]" />
-        <h4 className="text-[20px] font-[700] text-[#6d758f]">{props.title}</h4>
-        <p className="text-[14px] text-[#6d758f]">{props.content}</p>
-      </div>
-    </>
+    <div className="bg-card px-5 md:px-6 py-9 md:py-10 rounded-lg">
+      <img src={img} alt="industry-logo" className="w-12 md:w-14 mb-5 md:mb-6" />
+      <h3 className="font-bold text-xl text-grey mb-4">{title}</h3>
+      <p className="text-grey text-sm">{description}</p>
+    </div>
   )
 }
 
 ServiceCard.propTypes = {
-  src: PropTypes.string,
-  title: PropTypes.string,
-  content: PropTypes.string
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired
 }
+
 export default ServiceCard

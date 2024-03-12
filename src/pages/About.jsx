@@ -6,14 +6,10 @@ import AboutTitle from "../components/about/AboutTitle"
 import AboutDescription from "../components/about/AboutDescription"
 import AboutImage from "../components/about/AboutImage"
 import Socials from "../components/about/Socials"
-import ServiceCard from "../components/about/ServiceCard"
 import Comment from "../components/about/Comment"
 
 // images
 import bgAbout from "../assets/images/bg-about.png"
-import cube from "../assets/images/about/cube.png"
-import design from "../assets/images/about/design.png"
-import branding from "../assets/images/about/branding.png"
 import union from "../assets/images/about/Union.png"
 import excellence from "../assets/images/about/excellence.png"
 import speed from "../assets/images/about/Speed.png"
@@ -27,6 +23,7 @@ import { SlArrowRight } from "react-icons/sl"
 import { SlArrowLeft } from "react-icons/sl"
 //hook
 import { useEffect, useState } from "react"
+import Services from "../components/about/Services"
 
 const About = () => {
   const [leftStyle, setLeftStyle] = useState({})
@@ -70,27 +67,8 @@ const About = () => {
       <AboutTitle />
       <AboutDescription />
       <AboutImage />
-      <div className="four mb-20">
-        <div className="leading-[17px] md:leading-[21px] md:text-center  md:w-[600px] md:mx-auto pt-5">
-          <h3 className="text-[29px] md:text-[50px] font-[500] leading-[61px]">Our Services</h3>
-          <p className="mt-3 text-[#6d758f]">
-            As a company, we provide comprehensive services to support your business by leveraging strategy to drive people, process and
-            information.
-          </p>
-        </div>
-
-        <div className="md:flex md:flex-row gap-[10px] md:w-auto md:mx-auto md:max-w-[1100px] flex flex-col mt-2">
-          <ServiceCard src={cube} title="Saas Products" content="We build SaaS for Business and Digitized Companies" />
-
-          <ServiceCard
-            src={design}
-            title="Consultancy"
-            content="Need help in picking out a right project or you are thriving to move in a direction but don’t know how to start? we can help you."
-          />
-
-          <ServiceCard src={branding} title="Maintenance" content="Software maintenance is a more important technique to handle." />
-        </div>
-
+      <Services />
+      <div className="mb-20">
         <div className="md:flex md:gap-8 md:items-center mt-6 mb-16">
           <div className="md:w-[450px] mb-4">
             <h3 className="font-[500] text-[29px] md:text-[50px]">Our Core Values</h3>
