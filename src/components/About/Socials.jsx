@@ -4,7 +4,7 @@ import { BiLogoFacebook } from "react-icons/bi"
 
 import PropTypes from "prop-types"
 
-function Soc({ src }) {
+function Socials({ src }) {
   return (
     <>
       <div className="p-4 bg-white max-w-[327px] mb-[20px] md:mb-0 shrink-1 md:self-start">
@@ -26,8 +26,8 @@ function Soc({ src }) {
   )
 }
 
-Soc.propTypes = {
+Socials.propTypes = {
   src: PropTypes.string
 }
 
-export default Soc
+export default Socials

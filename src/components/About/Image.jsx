@@ -1,8 +1,8 @@
 //images
-import imageone from "../assets/images/group1.png"
-import imagetwo from "../assets/images/group2.png"
+import imageone from "./assets/images/group1.png"
+import imagetwo from "./assets/images/group2.png"
 
-function Img() {
+function Image() {
   return (
     <>
       <div className="md:flex mb-20 w-[95%] mx-auto justify-center">
@@ -17,4 +17,4 @@ function Img() {
   )
 }
 
-export default Img
+export default Image

@@ -1,7 +1,7 @@
 //icon
 import { FaStar } from "react-icons/fa"
 
-function Com() {
+function Comment() {
   return (
     <>
       <div className="border-2 border-grey max-w-[358px] p-[10px] rounded-lg flex flex-col gap-4 relative basis-[358px] shrink-0 mb-2">
@@ -23,4 +23,4 @@ function Com() {
   )
 }
 
-export default Com
+export default Comment

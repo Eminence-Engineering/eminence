@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 
-function Ser(props) {
+function ServiceCard(props) {
   return (
     <>
       <div className="sm:w-[95%] max-w-[354px] md:w-[354px] min-h-[242px] bg-[#e7ebf2] flex flex-col gap-[10px] px-[24px] py-[40px] rounded-[8px]">
@@ -12,9 +12,9 @@ function Ser(props) {
   )
 }
 
-Ser.propTypes = {
+ServiceCard.propTypes = {
   src: PropTypes.string,
   title: PropTypes.string,
   content: PropTypes.string
 }
-export default Ser
+export default ServiceCard
