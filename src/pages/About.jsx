@@ -4,7 +4,7 @@ import Hero from "../components/Hero"
 import PageChange from "../hooks/PageChange"
 import AboutTitle from "../components/about/AboutTitle"
 import AboutDescription from "../components/about/AboutDescription"
-import Image from "../components/about/Image"
+import AboutImage from "../components/about/AboutImage"
 import Socials from "../components/about/Socials"
 import ServiceCard from "../components/about/ServiceCard"
 import Comment from "../components/about/Comment"
@@ -69,7 +69,7 @@ const About = () => {
       <Hero bgImg={bgAbout} pageTitle={"About Us"} />
       <AboutTitle />
       <AboutDescription />
-      <Image />
+      <AboutImage />
       <div className="four mb-20">
         <div className="leading-[17px] md:leading-[21px] md:text-center  md:w-[600px] md:mx-auto pt-5">
           <h3 className="text-[29px] md:text-[50px] font-[500] leading-[61px]">Our Services</h3>
