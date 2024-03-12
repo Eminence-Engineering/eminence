@@ -1,8 +1,4 @@
 import Img from '../assets/images/Solution.png'
-import { AiOutlineSearch } from 'react-icons/ai'
-
-// components
-import Header from "./HeaderWhite";
 
 const CTAs = () => {
   return (

@@ -17,6 +17,7 @@ const Solution = () => {
       <PageChange pageTitle="Our Solutions | Eminence" />
       <Hero bgImg={bgSolutions} pageTitle={"Our Solutions"} />
       <CTA />
+      
       <Card />
       <CTAs />
       <Partners />
