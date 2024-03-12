@@ -3,7 +3,7 @@
 import Footer from "../components/Footer"
 import PageChange from "../hooks/PageChange"
 import Hero from "../components/home/Hero"
-import About from "../components/home/About"
+import Service from "../components/home/Service"
 import Industries from "../components/home/Industries"
 import Partners from "../components/home/Partners"
 import Executives from "../components/home/Executives"
@@ -13,7 +13,7 @@ const Home = () => {
     <>
       <PageChange pageTitle="Eminence - Transforming Ideas into Digital Reality" />
       <Hero />
-      <About />
+      <Service />
       <Industries />
       <Partners />
       <Executives />

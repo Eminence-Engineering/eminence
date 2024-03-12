@@ -2,7 +2,7 @@
 import ServiceBox from "./ServiceBox"
 import ServiceList from "./ServiceList"
 
-const About = () => {
+const Service = () => {
   return (
     <section className="container p-5 py-16 flex flex-col lg:flex-row justify-between gap-10 lg:gap-20">
       <div className="lg:max-w-md 2xl:max-w-2xl">
@@ -15,11 +15,11 @@ const About = () => {
 
       <div className="flex flex-col gap-8">
         {ServiceList.map((service, index) => (
-          <ServiceBox key={index} title={service.title} description={service.description} img={service.img} />
+          <ServiceBox key={index} {...service} />
         ))}
       </div>
     </section>
   )
 }
 
-export default About
+export default Service
