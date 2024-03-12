@@ -2,12 +2,12 @@
 import Footer from "../components/Footer"
 import Hero from "../components/Hero"
 import PageChange from "../hooks/PageChange"
-import Abt from "../components/About/Abt"
-import Get from "../components/About/Get"
-import Image from "../components/About/Image"
-import Socials from "../components/About/Socials"
-import ServiceCard from "../components/About/ServiceCard"
-import Comment from "../components/About/Comment"
+import Abt from "../components/about/Abt"
+import Get from "../components/about/Get"
+import Image from "../components/about/Image"
+import Socials from "../components/about/Socials"
+import ServiceCard from "../components/about/ServiceCard"
+import Comment from "../components/about/Comment"
 
 // images
 import bgAbout from "../assets/images/bg-about.png"

@@ -1,6 +1,6 @@
 //images
-import imageone from "../../assets/images/group1.png"
-import imagetwo from "../../assets/images/group2.png"
+import imageone from "../../assets/images/about/group1.png"
+import imagetwo from "../../assets/images/about/group2.png"
 
 function Image() {
   return (
