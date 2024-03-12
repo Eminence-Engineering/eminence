@@ -2,7 +2,7 @@
 import ServiceBox from "./ServiceBox"
 import ServiceList from "./ServiceList"
 
-const Service = () => {
+const Services = () => {
   return (
     <section className="container p-5 py-16 flex flex-col lg:flex-row justify-between gap-10 lg:gap-20">
       <div className="lg:max-w-md 2xl:max-w-2xl">
@@ -22,4 +22,4 @@ const Service = () => {
   )
 }
 
-export default Service
+export default Services
