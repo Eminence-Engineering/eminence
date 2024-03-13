@@ -1,7 +1,7 @@
 // components
 import Footer from "../components/Footer"
 import Hero from "../components/Hero"
-import CTA from "../components/solution/CTA"
+import WhoWeAre from "../components/solution/WhoWeAre"
 import CTAs from "../components/solution/CTAs"
 import Card from "../components/solution/Card"
 import ContactCard from "../components/solution/ContactCard"
@@ -16,7 +16,7 @@ const Solution = () => {
     <>
       <PageChange pageTitle="Our Solutions | Eminence" />
       <Hero bgImg={bgSolutions} pageTitle={"Our Solutions"} />
-      <CTA />
+      <WhoWeAre />
       <Card />
       <CTAs />
       <Partners />
