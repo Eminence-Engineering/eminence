@@ -17,6 +17,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .contact-card {
+    box-shadow: -4px -4px 24px 4px #00000014;
+  }
+
   .executives {
     background-image: url(./assets/svgs/bg-exec-desktop.svg);
     background-size: auto 100%;
