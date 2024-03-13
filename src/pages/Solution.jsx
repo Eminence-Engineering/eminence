@@ -1,11 +1,11 @@
 // components
-import Footer from "../components/Footer"
+import PageChange from "../hooks/PageChange"
 import Hero from "../components/Hero"
 import WhoWeAre from "../components/solution/WhoWeAre"
+import WhatWeDo from "../components/solution/WhatWeDo"
 import CTAs from "../components/solution/CTAs"
-import Card from "../components/solution/Card"
 import ContactCard from "../components/solution/ContactCard"
-import PageChange from "../hooks/PageChange"
+import Footer from "../components/Footer"
 
 // images
 import bgSolutions from "../assets/images/bg-solutions.png"
@@ -17,7 +17,7 @@ const Solution = () => {
       <PageChange pageTitle="Our Solutions | Eminence" />
       <Hero bgImg={bgSolutions} pageTitle={"Our Solutions"} />
       <WhoWeAre />
-      <Card />
+      <WhatWeDo />
       <CTAs />
       <Partners />
       <ContactCard />
