@@ -4,7 +4,7 @@ import PageChange from "../hooks/PageChange"
 import Hero from "../components/home/Hero"
 import Services from "../components/home/Services"
 import Industries from "../components/home/Industries"
-import Partners from "../components/home/Partners"
+import Partners from "../components/Partners"
 import Executives from "../components/Executives"
 import Testimonial from "../components/Testimonial"
 

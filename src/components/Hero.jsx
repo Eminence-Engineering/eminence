@@ -13,7 +13,7 @@ const Hero = ({ bgImg, pageTitle }) => {
     >
       <Header />
       <div className="container p-5 text-white flex-1 flex flex-col justify-end items-center gap-6 md:gap-7">
-         <h3 className="font-semibold text-3xl md:text-6xl">{pageTitle}</h3>
+        <h3 className="font-semibold text-3xl md:text-6xl">{pageTitle}</h3>
         <p className="flex items-center gap-3 text-base md:text-2xl">
           Home <IoArrowForwardSharp /> {pageTitle}
         </p>
